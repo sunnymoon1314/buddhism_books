@@ -1,7 +1,20 @@
 body {
+  /* https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line */
   /* font-family: 'KaiTi', '楷体_GB2312', 'SimSun'; */
-  font-family: 'SimSun';
-  font-weight: bold;
+
+
+  /* background: hsl(230, 100%, 50%); */
+  /* background: hwb(52 58% 4%); */
+  /* background: hsl(53, 78%, 48%); */
+  /* background-image: url('https://source.unsplash.com/daily'); */
+  align-items: center;
+  justify-items: center;
+
+  /*
+  border-style: solid;  
+  border-width: 1px; 
+  color: hsl(240, 0%, 100%);
+ */
 } 
 
 div.gallery {
@@ -9,17 +22,61 @@ div.gallery {
 }
   
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #ccc;
 }
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  /* height: auto; */
+  height: 50%;
+}
+
+.header img {
+  float: left;
+  width: 110px;
+  height: 110px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+  font-weight: normal;
+}
+
+/*
+h1, h2, h3, h4, h5 {
+  padding: 0%;
+  text-align: left;
+  font-family: 'SimSun';
+  font-size: xx-large;
+  font-weight: bolder;
+}
+*/
+
+p.desc_en {
+  padding: 0 6px;
+  text-align: left;
+  font-family: 'Arial';
+  font-size: medium;
+  font-weight: bolder;
 }
 
 div.desc {
-  padding: 15px;
+  padding: 0 6px;
   text-align: center;
+  font-family: 'SimSun';
+  font-size: large;
+  font-weight: bolder;
+}
+
+div.desc_en {
+  padding: 0 6px;
+  text-align: center;
+  font-family: 'Arial';
+  font-size: small;
+  font-weight: normal;
 }
 
 * {
@@ -53,7 +110,7 @@ div.desc {
 
 img:hover {
   transform: scale(1.1, 1.1);
-  transition: .5s transform;
+  transition: .8s transform;
   /* animation: skew 3s infinite; */
   /* transform: skew(-10deg); */
   /* animation-direction: alternate; */
