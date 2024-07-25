@@ -12,7 +12,7 @@ body {
   justify-content: center;
   /*
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; 
   color: hsl(240, 0%, 100%);
  */
 }
@@ -93,7 +93,7 @@ div.desc_en {
 /* For PCs and laptops */
 @media only screen and (min-width: 901px) and (max-width: 2000px) {
   .responsive {
-    width: 24.99999%;
+    width: 49.99999%;
     margin: 6px 0;
   }
 
@@ -153,8 +153,8 @@ div.desc_en {
 }
 
 img:hover {
-  transform: scale(1.1, 1.1);
-  transition: .8s transform;
+  /* transform: scale(1.1, 1.1); */
+  /* transition: .8s transform; */
   /* animation: skew 3s infinite; */
   /* transform: skew(-10deg); */
   /* animation-direction: alternate; */
@@ -174,11 +174,33 @@ img:hover {
   position: relative;
 }
 
-/* Position the navbar container inside the image */
+/* Position the navbar container inside the image
 .container {
   position: absolute;
   margin: 20px;
   width: auto;
+} */
+
+/* These attributes should be controlled within the @media settings.
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 40vh 30vh 30vh;
+  border: 5px solid #ccc;
+  grid-template-areas: 
+    "item item item item itemv" 
+    "item item item item item" 
+    "item item item item item"
+}
+*/
+
+.item {
+  background: lightgray;
+}
+
+.item > img {
+  object-fit: cover;
+  width: 100%
 }
 
 /* The navbar */
