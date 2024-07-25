@@ -18,11 +18,11 @@ body {
 }
 
 div.gallery {
-  border: 1px solid #ccc;
+  border: 1px solid black;
 }
 
 div.gallery:hover {
-  border: 1px solid #ccc;
+  border: 1px solid black;
 }
 
 div.gallery img {
@@ -40,7 +40,7 @@ div.gallery img {
 
 .header h1 {
   position: relative;
-  top: 18px;
+  top: 10px;
   left: 10px;
   font-weight: normal;
   font-size: 32px;
@@ -85,7 +85,7 @@ div.desc_en {
 }
 
 .responsive {
-  padding: 0 6px;
+  padding: 0 10px;
   float: left;
   width: 24.99999%;
 }
@@ -93,16 +93,22 @@ div.desc_en {
 /* For PCs and laptops */
 @media only screen and (min-width: 901px) and (max-width: 2000px) {
   .responsive {
+    padding: 0 10px;
     width: 24.99999%;
-    margin: 6px 0;
+    margin: 10px 0;
   }
 
   .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 40vh 30vh 30vh;
-    border: 5px solid #ccc;
-    grid-template-areas: 
+    grid-template-rows: auto;
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    gap: 10px;
+    /* border: 5px solid #ccc; */
+    padding: 0 10px;
+    margin: 10px 0;
+    grid-template-areas:
       "item item item item item"
       "item item item item item"
       "item item item item item"
@@ -112,16 +118,22 @@ div.desc_en {
 /* For tablets */
 @media only screen and (min-width: 501px) and (max-width: 900px) {
   .responsive {
+    padding: 0 10px;
     width: 49.99999%;
-    margin: 6px 0;
+    margin: 10px 0;
   }
 
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40vh 30vh 30vh;
-    border: 5px solid #ccc;
-    grid-template-areas: 
+    grid-template-rows: auto;
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    gap: 10px;
+    /* border: 5px solid #ccc; */
+    padding: 0 10px;
+    margin: 10px 0;
+    grid-template-areas:
       "item item item"
       "item item item"
       "item item item"
@@ -131,15 +143,22 @@ div.desc_en {
 /* For mobile */
 @media only screen and (max-width: 500px) {
   .responsive {
+    padding: 0 10px;
     width: 100%;
+    margin: 10px 0;
   }
 
   .container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 40vh;
-    border: 5px solid #ccc;
-    grid-template-areas: 
+    grid-template-rows: auto;
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    gap: 10px;
+    /* border: 5px solid #ccc; */
+    padding: 0 10px;
+    margin: 10px 0;
+    grid-template-areas:
       "item"
       "item"
       "item"
@@ -201,7 +220,7 @@ img:hover {
 
 .menu-button, .menu-button-2 {
   align-content: float;
-  width: 200px;
+  width: 250px;
   height: 50px;
   font-size: 15px;
   text-align: center;
