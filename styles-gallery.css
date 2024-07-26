@@ -34,16 +34,31 @@ div.gallery img {
 .header img {
   float: left;
   width: 110px;
-  height: 110px;
+  height: 120px;
   background: #555;
 }
 
 .header h1 {
+  color: blue;
   position: relative;
-  top: 10px;
   left: 10px;
+  font-family: 'LiSu';
+  /* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
+  STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei */
+  /* font-weight: normal; KaiTi', '楷体_GB2312', 'SimSun'; */
+  font-size: 48px;
   font-weight: normal;
-  font-size: 32px;
+  text-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
+}
+
+.header h2 {
+  color: orangered;
+  position: relative;
+  left: 10px;
+  font-family: 'Arial';
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
 }
 
 /*
@@ -60,24 +75,30 @@ p.desc_en {
   padding: 0 6px;
   text-align: left;
   font-family: 'Arial';
-  font-size: medium;
-  font-weight: bolder;
+  /* font-size: medium; */
+  font-size: 12px;
+  /* font-weight: bolder; */
+  text-shadow: 1px 2px 2px rgba(73, 104, 163, 0.6);
 }
 
 div.desc {
   padding: 0 6px;
   text-align: center;
-  font-family: 'SimSun';
-  font-size: large;
+  font-family: 'STKaiti';
+  /* font-size: large; */
+  font-size: 22px;
   font-weight: bolder;
+  text-shadow: 1px 2px 2px rgba(73, 104, 163, 0.6);;
 }
 
 div.desc_en {
   padding: 0 6px;
   text-align: center;
   font-family: 'Arial';
-  font-size: small;
-  font-weight: normal;
+  /* font-size: small; */
+  font-size: 12px;
+  /* font-weight: normal; */
+  text-shadow: 1px 2px 2px rgba(73, 104, 163, 0.6);
 }
 
 * {
@@ -120,6 +141,14 @@ div.desc_en {
 
 /* For tablets */
 @media only screen and (min-width: 501px) and (max-width: 900px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header h2 {
+    font-size: 12px;
+  }
+
   .responsive {
     padding: 0 10px;
     width: 49.99999%;
@@ -148,6 +177,14 @@ div.desc_en {
 
 /* For mobile */
 @media only screen and (max-width: 500px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header h2 {
+    font-size: 12px;
+  }
+
   .responsive {
     padding: 0 10px;
     width: 100%;
@@ -274,50 +311,3 @@ img:hover {
     background-position: 0% 50%;
   }
 }
-
-/*
-.item {
-  --s: 500px; * control the size *
-  --g: 5px;  * control the gap *
-  display: grid;
-  * margin: calc(var(--s) + var(--g)); *
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  border: 5px solid #ccc;
-  grid-template-areas:
-    "item item item item itemv"
-    "item item item item item"
-    "item item item item item"
-}
-
-* 26.07.2024 Soon: Added to create grid-items in hexagon shape. *
-.item > img {
-  grid-area: 1/1;
-  width: var(--s);
-  aspect-ratio: 1.15;
-  object-fit: cover;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%,75% 100%,25% 100%,0 50%);
-  clip-path: circle();
-  transform: translate(var(--_x,0),var(--_y,0)) scale(var(--_t,1));
-  cursor: pointer;
-  filter: grayscale(80%);
-  transition: .2s linear;
-}
-
-.item > img:hover {
-  filter: grayscale(0);
-  z-index: 1;
-  --_t: 1.2;
-}
-
-.item > img:nth-child(1) {--_y: calc(-100% - var(--g))}
-.item > img:nth-child(7) {--_y: calc( 100% + var(--g))}
-.item > img:nth-child(3),
-.item > img:nth-child(5) {--_x: calc(-75% - .87*var(--g))}
-.item > img:nth-child(4),
-.item > img:nth-child(6) {--_x: calc( 75% + .87*var(--g))}
-.item > img:nth-child(3),
-.item > img:nth-child(4) {--_y: calc(-50% - .5*var(--g))}
-.item > img:nth-child(5), 
-.item > img:nth-child(6) {--_y: calc( 50% + .5*var(--g))}
-*/
