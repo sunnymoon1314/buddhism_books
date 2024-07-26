@@ -12,17 +12,17 @@ body {
   justify-content: center;
   /*
   border-style: solid;
-  border-width: 1px; 
+  border-width: 1px;
   color: hsl(240, 0%, 100%);
  */
 }
 
 div.gallery {
-  border: 1px solid black;
+  border: 0px solid black;
 }
 
 div.gallery:hover {
-  border: 1px solid black;
+  border: 0px solid black;
 }
 
 div.gallery img {
@@ -96,6 +96,9 @@ div.desc_en {
     padding: 0 10px;
     width: 24.99999%;
     margin: 10px 0;
+    /* https://getcssscan.com/css-box-shadow-examples */
+    /* #30 Material */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
 
   .container {
@@ -121,6 +124,9 @@ div.desc_en {
     padding: 0 10px;
     width: 49.99999%;
     margin: 10px 0;
+    /* https://getcssscan.com/css-box-shadow-examples */
+    /* #30 Material */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
 
   .container {
@@ -146,6 +152,9 @@ div.desc_en {
     padding: 0 10px;
     width: 100%;
     margin: 10px 0;
+    /* https://getcssscan.com/css-box-shadow-examples */
+    /* #30 Material */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
 
   .container {
@@ -200,27 +209,17 @@ img:hover {
   width: auto;
 } */
 
-/* These attributes should be controlled within the @media settings.
-.container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 40vh 30vh 30vh;
-  border: 5px solid #ccc;
-  grid-template-areas: 
-    "item item item item itemv" 
-    "item item item item item" 
-    "item item item item item"
-}
-*/
-
 .item {
-  background: lightgray;
-  border: 1px black solid;
+  background: antiquewhite;
+  border: 0px black solid;
 }
 
 .item > img {
   object-fit: cover;
-  width: 100%
+  width: 100%;
+  /* https://getcssscan.com/css-box-shadow-examples */
+  /* #30 Material */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 /* The navbar */
@@ -243,7 +242,8 @@ img:hover {
 
 .menu-button, .menu-button-2 {
   align-content: float;
-  width: 250px;
+  margin-left: 6px;
+  width: 280px;
   height: 50px;
   font-size: 15px;
   text-align: center;
@@ -274,3 +274,50 @@ img:hover {
     background-position: 0% 50%;
   }
 }
+
+/*
+.item {
+  --s: 500px; * control the size *
+  --g: 5px;  * control the gap *
+  display: grid;
+  * margin: calc(var(--s) + var(--g)); *
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  border: 5px solid #ccc;
+  grid-template-areas:
+    "item item item item itemv"
+    "item item item item item"
+    "item item item item item"
+}
+
+* 26.07.2024 Soon: Added to create grid-items in hexagon shape. *
+.item > img {
+  grid-area: 1/1;
+  width: var(--s);
+  aspect-ratio: 1.15;
+  object-fit: cover;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%,75% 100%,25% 100%,0 50%);
+  clip-path: circle();
+  transform: translate(var(--_x,0),var(--_y,0)) scale(var(--_t,1));
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: .2s linear;
+}
+
+.item > img:hover {
+  filter: grayscale(0);
+  z-index: 1;
+  --_t: 1.2;
+}
+
+.item > img:nth-child(1) {--_y: calc(-100% - var(--g))}
+.item > img:nth-child(7) {--_y: calc( 100% + var(--g))}
+.item > img:nth-child(3),
+.item > img:nth-child(5) {--_x: calc(-75% - .87*var(--g))}
+.item > img:nth-child(4),
+.item > img:nth-child(6) {--_x: calc( 75% + .87*var(--g))}
+.item > img:nth-child(3),
+.item > img:nth-child(4) {--_y: calc(-50% - .5*var(--g))}
+.item > img:nth-child(5), 
+.item > img:nth-child(6) {--_y: calc( 50% + .5*var(--g))}
+*/
