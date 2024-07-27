@@ -168,17 +168,17 @@ div.desc_en {
     text-rendering: optimizeLegibility;
     white-space: nowrap;
     text-wrap: nowrap;
-  
+
     &::before {
       font-size: 24px;
-      content: "🌺🙏";
+      content: "🌺";
     }
-  
+
     &::after {
       font-size: 24px;
-      content: "🙏🌺";
+      content: "🌺";
     }
-  
+
     &.elegantshadow {
       color: red;
       /* letter-spacing: .15em; */
@@ -214,7 +214,7 @@ div.desc_en {
         -27px 54px 1px #e2e0df,
         -28px 56px 1px #e4e3e2; */
     }
-  
+
     &.deepshadow {
       color: #e0dfdc;
       background-color: #333;
@@ -311,14 +311,14 @@ div.desc_en {
 
     &::before {
       font-size: 24px;
-      content: "🌺🙏";
+      content: "🌺";
     }
-  
+
     &::after {
       font-size: 24px;
-      content: "🙏🌺";
+      content: "🌺";
     }
-  
+
     &.elegantshadow {
       color: red;
       text-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
@@ -380,14 +380,14 @@ div.desc_en {
 
     &::before {
       font-size: 12px;
-      content: "🌺🙏";
+      content: "🙏";
     }
-  
+
     &::after {
       font-size: 12px;
-      content: "🙏🌺";
+      content: "🌺";
     }
-  
+
     &.elegantshadow {
       color: red;
       text-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
