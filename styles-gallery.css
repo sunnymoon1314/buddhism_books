@@ -151,7 +151,16 @@ div.desc_en {
   p {
     /* font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; */
     /* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
-    STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei */
+    STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei
+    <p class="elegantshadow" style="font-family: LiSu">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STCaiyun">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STFangsong">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STKaiti">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STHupo">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STXingkai">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STLiti">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STXinwei">阿弥<font size="5px">🙏</font>陀佛</p>
+    */
     font-family: 'STXinwei';
     font-size: 96px;
     font-weight: normal;
@@ -160,6 +169,8 @@ div.desc_en {
     text-rendering: optimizeLegibility;
     white-space: nowrap;
     text-wrap: nowrap;
+    letter-spacing: 0em;
+    margin: 0px;
 
     &::before {
       font-size: 24px;
@@ -260,7 +271,7 @@ div.desc_en {
   .header h2 {
     left: 10px;
     font-family: 'Arial';
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .responsive {
@@ -291,7 +302,16 @@ div.desc_en {
   p {
     /* font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; */
     /* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
-    STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei */
+    STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei
+    <p class="elegantshadow" style="font-family: LiSu">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STCaiyun">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STFangsong">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STKaiti">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STHupo">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STXingkai">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STLiti">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STXinwei">阿弥<font size="5px">🙏</font>陀佛</p>
+    */
     font-family: 'STXinwei';
     font-size: 96px;
     font-weight: normal;
@@ -300,6 +320,8 @@ div.desc_en {
     text-rendering: optimizeLegibility;
     white-space: nowrap;
     text-wrap: nowrap;
+    letter-spacing: 0em;
+    margin: 0px;
 
     &::before {
       font-size: 24px;
@@ -329,7 +351,7 @@ div.desc_en {
   .header h2 {
     left: 10px;
     font-family: 'Arial';
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .responsive {
@@ -360,7 +382,16 @@ div.desc_en {
   p {
     /* font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; */
     /* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
-    STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei */
+    STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei
+    <p class="elegantshadow" style="font-family: LiSu">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STCaiyun">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STFangsong">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STKaiti">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STHupo">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STXingkai">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STLiti">阿弥<font size="5px">🙏</font>陀佛</p>
+    <p class="elegantshadow" style="font-family: STXinwei">阿弥<font size="5px">🙏</font>陀佛</p>
+    */
     font-family: 'STXinwei';
     font-size: 48px;
     font-weight: normal;
@@ -369,6 +400,8 @@ div.desc_en {
     text-rendering: optimizeLegibility;
     white-space: nowrap;
     text-wrap: nowrap;
+    letter-spacing: 0em;
+    margin: 0px;
 
     &::before {
       font-size: 12px;
