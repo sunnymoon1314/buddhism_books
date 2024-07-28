@@ -53,14 +53,14 @@ div.gallery img {
 }
 
 .header img {
-  float: left;
+  /* 28.07.2024 Soon: Align the image left or right using inline HTML tag instead. */
+  /* float: left; */
   width: 110px;
   height: 120px;
   background: #555;
   box-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
 }
-/* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
-STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei */
+
 .header h1 {
   color: blue;
   position: relative;
@@ -255,6 +255,7 @@ div.desc_en {
         0 15px 0 #121212,
         0 22px 30px rgba(0, 0, 0, 0.9); */
     }
+
     &.insetshadow {
       color: #202020;
       background-color: #2d2d2d;
@@ -263,6 +264,7 @@ div.desc_en {
         -1px -1px 1px #111,
         2px 2px 1px #363636;
     }
+
     &.retroshadow {
       color: #2c2c2c;
       background-color: #d5d5d5;
@@ -503,18 +505,19 @@ img:hover {
   animation: anime 16s linear infinite;
   */
 
-  width: 200px;
-  height: 50px;
+  width: 220px;
+  height: 60px;
   text-align: center;
-  align-content: end;
+  align-content: space-evenly;
   margin-left: 6px;
 
 	cursor: pointer;
 	position: relative;
 	border-radius: 16px; /* 50px */
 	line-height: 20px;
-	font-size: 14px;
-  font-weight: normal;
+  font-family: 'Arial Narrow';
+	font-size: 20px;
+  font-weight: bold;
 
 	/* border: 1px solid #012880; */
 	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
@@ -548,34 +551,34 @@ img:hover {
 .menu-button::before {
 	content: "";
 	display: block;
-	height: 0.15rem;
+	/* height: 0.15rem; */
 	position: absolute;
-	top: 0.5rem;
+	/* top: 0.5rem; */
 	left: 50%;
-	transform: translateX(-50%);
+	/* transform: translateX(-50%); */
 	width: calc(100% - 7.5rem);
-	background: #fff;
+	/* background: #fff; */
 	border-radius: 100%;
 
-	opacity: 0.7;
-	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+	/* opacity: 0.7; */
+	/* background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%); */
 }
 
 .menu-button::after {
 	content: "";
 	display: block;
-	height: 0.15rem;
+	/* height: 0.15rem; */
 	position: absolute;
-	bottom: 0.75rem;
+	/* bottom: 0.75rem; */
 	left: 50%;
-	transform: translateX(-50%);
+	/* transform: translateX(-50%); */
 	width: calc(100% - 7.5rem);
-	background: #fff;
+	/* background: #fff; */
 	border-radius: 100%;
 
-	filter: blur(1px);
-	opacity: 0.05;
-	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+	/* filter: blur(1px); */
+	/* opacity: 0.05; */
+	/* background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%); */
 }
 
 @keyframes anime {
@@ -664,4 +667,74 @@ button::after {
 	filter: blur(1px);
 	opacity: 0.05;
 	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+/*
+html,
+body {
+	height: 100%;
+	display: flex;
+	align-items: top;
+	justify-content: center;
+	background-color: navajowhite;
+}
+
+    <div class="box">
+      <div class="inner">
+        <span>🙏南无阿弥陀佛🙏众生是未来佛🙏极乐世界是我家🙏</span>
+      </div>
+      <div class="inner">
+        <span>🙏南无阿弥陀佛🙏众生是未来佛🙏极乐世界是我家🙏</span>
+      </div>
+    </div>
+*/
+
+.box {
+	display: flex;
+  margin-top: 0px;
+}
+
+.box .inner {
+	width: 3000px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-family: Arial;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: antiquewhite;
+	color: red;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-0deg);
+}
+
+.box .inner:last-child {
+	background-color: antiquewhite;
+	color: red;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(0deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 15s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 7.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
 }
