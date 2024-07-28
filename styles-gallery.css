@@ -36,13 +36,14 @@ div.gallery img {
   width: 110px;
   height: 120px;
   background: #555;
+  box-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
 }
 
 .header h1 {
   color: blue;
   position: relative;
   left: 10px;
-  font-family: 'LiSu';
+  font-family: 'Arial'; /* LiSu */
   /* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
   STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei */
   /* font-weight: normal; KaiTi', '楷体_GB2312', 'SimSun'; */
@@ -161,16 +162,16 @@ div.desc_en {
     <p class="elegantshadow" style="font-family: STLiti">阿弥<font size="5px">🙏</font>陀佛</p>
     <p class="elegantshadow" style="font-family: STXinwei">阿弥<font size="5px">🙏</font>陀佛</p>
     */
-    font-family: 'STXinwei';
-    font-size: 96px;
-    font-weight: normal;
+    font-family: 'Arial'; /* STXinwei */
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     white-space: nowrap;
     text-wrap: nowrap;
     letter-spacing: 0em;
-    margin: 0px;
+    margin: 50px;
 
     &::before {
       font-size: 24px;
@@ -264,7 +265,7 @@ div.desc_en {
 @media only screen and (min-width: 501px) and (max-width: 900px) {
   .header h1 {
     left: 10px;
-    font-family: 'LiSu';
+    font-family: 'Arial'; /* LiSu */
     font-size: 32px;
   }
 
@@ -312,16 +313,16 @@ div.desc_en {
     <p class="elegantshadow" style="font-family: STLiti">阿弥<font size="5px">🙏</font>陀佛</p>
     <p class="elegantshadow" style="font-family: STXinwei">阿弥<font size="5px">🙏</font>陀佛</p>
     */
-    font-family: 'STXinwei';
-    font-size: 96px;
-    font-weight: normal;
+    font-family: 'Arial'; /* STXinwei */
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     white-space: nowrap;
     text-wrap: nowrap;
     letter-spacing: 0em;
-    margin: 0px;
+    margin: 50px;
 
     &::before {
       font-size: 24px;
@@ -344,7 +345,7 @@ div.desc_en {
 @media only screen and (max-width: 500px) {
   .header h1 {
     left: 10px;
-    font-family: 'LiSu';
+    font-family: 'Arial'; /* LiSu */
     font-size: 32px;
   }
 
@@ -392,24 +393,24 @@ div.desc_en {
     <p class="elegantshadow" style="font-family: STLiti">阿弥<font size="5px">🙏</font>陀佛</p>
     <p class="elegantshadow" style="font-family: STXinwei">阿弥<font size="5px">🙏</font>陀佛</p>
     */
-    font-family: 'STXinwei';
-    font-size: 48px;
-    font-weight: normal;
+    font-family: 'Arial'; /* STXinwei */
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     white-space: nowrap;
     text-wrap: nowrap;
     letter-spacing: 0em;
-    margin: 0px;
+    margin: 50px;
 
     &::before {
-      font-size: 12px;
+      font-size: 24px;
       content: "🌺";
     }
 
     &::after {
-      font-size: 12px;
+      font-size: 24px;
       content: "🌺";
     }
 

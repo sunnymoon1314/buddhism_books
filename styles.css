@@ -52,13 +52,15 @@ div.gallery img {
   width: 110px;
   height: 120px;
   background: #555;
+  box-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
 }
-
+/* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
+STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei */
 .header h1 {
   color: blue;
   position: relative;
   left: 10px;
-  font-family: 'LiSu';
+  font-family: 'Arial'; /* LiSu */
   /* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
   STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei */
   /* font-weight: normal; KaiTi', '楷体_GB2312', 'SimSun'; */
@@ -167,16 +169,16 @@ div.desc_en {
     <p class="elegantshadow" style="font-family: STLiti">阿弥<font size="5px">🙏</font>陀佛</p>
     <p class="elegantshadow" style="font-family: STXinwei">阿弥<font size="5px">🙏</font>陀佛</p>
     */
-    font-family: 'STXinwei';
-    font-size: 96px;
-    font-weight: normal;
+    font-family: 'Arial'; /* STXinwei */
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     white-space: nowrap;
     text-wrap: nowrap;
     letter-spacing: 0em;
-    margin: 0px;
+    margin: 50px;
 
     &::before {
       font-size: 24px;
@@ -270,7 +272,7 @@ div.desc_en {
 @media only screen and (min-width: 501px) and (max-width: 900px) {
   .header h1 {
     left: 10px;
-    font-family: 'LiSu';
+    font-family: 'Arial'; /* LiSu */
     font-size: 32px;
   }
 
@@ -318,16 +320,16 @@ div.desc_en {
     <p class="elegantshadow" style="font-family: STLiti">阿弥<font size="5px">🙏</font>陀佛</p>
     <p class="elegantshadow" style="font-family: STXinwei">阿弥<font size="5px">🙏</font>陀佛</p>
     */
-    font-family: 'STXinwei';
-    font-size: 96px;
-    font-weight: normal;
+    font-family: 'Arial'; /* STXinwei */
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     white-space: nowrap;
     text-wrap: nowrap;
     letter-spacing: 0em;
-    margin: 0px;
+    margin: 50px;
 
     &::before {
       font-size: 24px;
@@ -350,7 +352,7 @@ div.desc_en {
 @media only screen and (max-width: 500px) {
   .header h1 {
     left: 10px;
-    font-family: 'LiSu';
+    font-family: 'Arial'; /* LiSu */
     font-size: 32px;
   }
 
@@ -398,24 +400,24 @@ div.desc_en {
     <p class="elegantshadow" style="font-family: STLiti">阿弥<font size="5px">🙏</font>陀佛</p>
     <p class="elegantshadow" style="font-family: STXinwei">阿弥<font size="5px">🙏</font>陀佛</p>
     */
-    font-family: 'STXinwei';
-    font-size: 48px;
-    font-weight: normal;
+    font-family: 'Arial'; /* STXinwei */
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     white-space: nowrap;
     text-wrap: nowrap;
     letter-spacing: 0em;
-    margin: 0px;
+    margin: 50px;
 
     &::before {
-      font-size: 12px;
+      font-size: 24px;
       content: "🌺";
     }
 
     &::after {
-      font-size: 12px;
+      font-size: 24px;
       content: "🌺";
     }
 
@@ -518,3 +520,71 @@ img:hover {
 /* https://codepen.io/juanbrujo/pen/DBKxxM */
 /* 🌺🙏🌺🙏	Praying Hands	Alt + 128591	1F64F */
 /* https://www.webnots.com/alt-code-shortcuts-for-hands-symbols/ */
+
+/*
+$subtlepink: rgba(238, 174, 202, 1);
+$subtleblue: rgba(148, 187, 233, 1);
+$buttonsize: 350px;
+*/
+
+button {
+    margin: auto;
+    padding: 0;
+    border: none;
+    border-radius: 30%;
+    width: 280px;
+    height: 50px;
+    background: rgb(238, 174, 202);
+    background: linear-gradient(30deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    color: rgba(73, 104, 163, 0.6);
+    font-size: 3.6em;
+    font-weight: 600;
+
+    box-shadow: inset 0 0 35px 0px rgba(0, 0, 0, 0.25),
+        inset 0 2px 1px 1px rgba(255, 255, 255, 0),
+        1px 1px 15px 2px rgba(154, 137, 164, 0.5);
+
+    text-shadow: 1px -1px 3px rgba(143, 162, 199, 1),
+        -1px 1px 3px rgba(192, 151, 178, 1);
+    outline: none;
+
+    -webkit-transition: box-shadow 0.4s, text-shadow 0.5s;
+    -moz-transition: box-shadow 0.4s, text-shadow 0.5s;
+    transition: box-shadow 0.4s, text-shadow 0.5s;
+
+    &:hover {
+        cursor: pointer;
+
+        box-shadow: inset 0 0 35px 0px rgba(0, 0, 0, 0.15),
+            inset 0 2px 1px 1px rgba(255, 255, 255, 0),
+            1px 1px 15px 2px rgba(154, 137, 164, 0.1);
+
+        text-shadow: 3px -3px 5px rgba(143, 162, 199, 1),
+            -3px 3px 5px rgba(192, 151, 178, 1);
+
+        -webkit-transition: box-shadow 0.4s, text-shadow 0.5s;
+        -moz-transition: box-shadow 0.4s, text-shadow 0.5s;
+        transition: box-shadow 0.4s, text-shadow 0.5s;
+    }
+
+    &:active {
+        background: linear-gradient(
+            30deg,
+            rgba(210, 178, 212, 1) 0%,
+            rgba(177, 183, 223, 1) 100%
+        );
+        color: rgba(192, 181, 218, 1);
+
+        box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.15),
+            1px 1px 15px 2px rgba(154, 137, 164, 0.1);
+
+        text-shadow: 1px -1px 1px rgba(143, 162, 199, 0.75),
+            -1px 1px 1px rgba(192, 151, 178, 0.75);
+
+        -webkit-transition: background 0.3s color 0.2s,
+            text-shadow 0.3s box-shadow 0.3s;
+        -moz-transition: background 0.3s color 0.2s,
+            text-shadow 0.3s box-shadow 0.3s;
+        transition: background 0.3s color 0.2s, text-shadow 0.3s box-shadow 0.3s;
+    }
+}
