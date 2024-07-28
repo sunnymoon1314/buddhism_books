@@ -505,15 +505,18 @@ img:hover {
   */
 
   width: 280px;
+  height: 50px;
   text-align: center;
   align-content: float;
+  align-content: end;
   margin-left: 6px;
 
 	cursor: pointer;
 	position: relative;
-	border-radius: 15px;
-	line-height: 50px;
-	font-size: 15px;
+	border-radius: 16px; /* 50px */
+	line-height: 20px;
+	font-size: 14px;
+  font-weight: normal;
 
 	/* border: 1px solid #012880; */
 	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
