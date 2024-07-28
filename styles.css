@@ -24,6 +24,10 @@ div.gallery {
 
 div.gallery:hover {
   border: 0px solid black;
+  /* 28.07.2024 Soon: Put the transition effect here,
+  so that the image at the header line is not affected. */
+  transform: scale(1.1, 1.1);
+  transition: .8s transform;
 }
 
 div.gallery img {
@@ -437,8 +441,8 @@ div.desc_en {
 }
 
 img:hover {
-  transform: scale(1.1, 1.1);
-  transition: .8s transform;
+  /* transform: scale(1.1, 1.1); */
+  /* transition: .8s transform; */
   /* animation: skew 3s infinite; */
   /* transform: skew(-10deg); */
   /* animation-direction: alternate; */
@@ -499,7 +503,7 @@ img:hover {
   animation: anime 16s linear infinite;
   */
 
-  width: 280px;
+  width: 200px;
   height: 50px;
   text-align: center;
   align-content: end;
