@@ -1,4 +1,5 @@
 body {
+  /* https://www.w3schools.com/cssref/css_colors.php */
   /* https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line */
   /* font-family: 'KaiTi', '楷体_GB2312', 'SimSun'; */
 
@@ -97,6 +98,7 @@ p.desc_en {
   font-size: 12px;
   /* font-weight: bolder; */
   text-shadow: 1px 2px 2px rgba(73, 104, 163, 0.6);
+
 }
 
 div.desc {
@@ -472,7 +474,7 @@ img:hover {
 /* Navbar links */
 .topnav a {
   float: left;
-  color: antiquewhite;
+  color: black; /* antiquewhite */
   text-decoration: none;
 }
 
@@ -481,7 +483,8 @@ img:hover {
   color: black;
 }
 
-.menu-button, .menu-button-2 {
+.menu-button {
+  /*
   align-content: float;
   margin-left: 6px;
   width: 280px;
@@ -494,14 +497,79 @@ img:hover {
   background: linear-gradient(-45deg, #FFA63D, #FF3D77, #3CF0C5, #338AFF);
   background-size: 600%;
   animation: anime 16s linear infinite;
+  */
+
+  width: 280px;
+  text-align: center;
+  align-content: float;
+  margin-left: 6px;
+
+	cursor: pointer;
+	position: relative;
+	border-radius: 15px; /* 50px */
+	line-height: 50px;
+	font-size: 15px;
+
+	/* border: 1px solid #012880; */
+	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+							0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+  background: linear-gradient(-45deg, #FFA63D, #FF3D77, #3CF0C5, #338AFF);
+  background-size: 600%;
+  animation: anime 16s linear infinite;
 }
 
+/*
 .menu-button-2 {
      position: absolute;
      margin-top: -70px;
      z-index: -1;
      filter: blur(30px);
      opacity: 0.8;
+}
+*/
+
+.menu-button span {
+	color: transparent;
+	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+.menu-button::before {
+	content: "";
+	display: block;
+	height: 0.15rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+.menu-button::after {
+	content: "";
+	display: block;
+	height: 0.15rem;
+	position: absolute;
+	bottom: 0.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+
+	filter: blur(1px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
 }
 
 @keyframes anime {
@@ -522,69 +590,72 @@ img:hover {
 /* https://www.webnots.com/alt-code-shortcuts-for-hands-symbols/ */
 
 /*
-$subtlepink: rgba(238, 174, 202, 1);
-$subtleblue: rgba(148, 187, 233, 1);
-$buttonsize: 350px;
+<button><span>佛教书籍系列 Buddhism eBook Series</span></button>
+<button><span>佛教法宝 Buddhism Treasure</span></button>
 */
 
 button {
-    margin: auto;
-    padding: 0;
-    border: none;
-    border-radius: 30%;
-    width: 280px;
-    height: 50px;
-    background: rgb(238, 174, 202);
-    background: linear-gradient(30deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    color: rgba(73, 104, 163, 0.6);
-    font-size: 3.6em;
-    font-weight: 600;
+  /*
+	cursor: pointer;
+	position: relative;
+	padding: 2.5rem 7.5rem;
+	border-radius: 3.75rem;
+	line-height: 2.5rem;
+	font-size: 2rem;
+	font-weight: 600;
+  */
 
-    box-shadow: inset 0 0 35px 0px rgba(0, 0, 0, 0.25),
-        inset 0 2px 1px 1px rgba(255, 255, 255, 0),
-        1px 1px 15px 2px rgba(154, 137, 164, 0.5);
+	cursor: pointer;
+	position: relative;
+	border-radius: 50px;
+	line-height: 50px;
+	font-size: 15px;
+	
+	border: 1px solid #012880;
+	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+							0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+}
 
-    text-shadow: 1px -1px 3px rgba(143, 162, 199, 1),
-        -1px 1px 3px rgba(192, 151, 178, 1);
-    outline: none;
+button span {
+	color: transparent;
+	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
 
-    -webkit-transition: box-shadow 0.4s, text-shadow 0.5s;
-    -moz-transition: box-shadow 0.4s, text-shadow 0.5s;
-    transition: box-shadow 0.4s, text-shadow 0.5s;
+button::before {
+	content: "";
+	display: block;
+	height: 0.15rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
 
-    &:hover {
-        cursor: pointer;
-
-        box-shadow: inset 0 0 35px 0px rgba(0, 0, 0, 0.15),
-            inset 0 2px 1px 1px rgba(255, 255, 255, 0),
-            1px 1px 15px 2px rgba(154, 137, 164, 0.1);
-
-        text-shadow: 3px -3px 5px rgba(143, 162, 199, 1),
-            -3px 3px 5px rgba(192, 151, 178, 1);
-
-        -webkit-transition: box-shadow 0.4s, text-shadow 0.5s;
-        -moz-transition: box-shadow 0.4s, text-shadow 0.5s;
-        transition: box-shadow 0.4s, text-shadow 0.5s;
-    }
-
-    &:active {
-        background: linear-gradient(
-            30deg,
-            rgba(210, 178, 212, 1) 0%,
-            rgba(177, 183, 223, 1) 100%
-        );
-        color: rgba(192, 181, 218, 1);
-
-        box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.15),
-            1px 1px 15px 2px rgba(154, 137, 164, 0.1);
-
-        text-shadow: 1px -1px 1px rgba(143, 162, 199, 0.75),
-            -1px 1px 1px rgba(192, 151, 178, 0.75);
-
-        -webkit-transition: background 0.3s color 0.2s,
-            text-shadow 0.3s box-shadow 0.3s;
-        -moz-transition: background 0.3s color 0.2s,
-            text-shadow 0.3s box-shadow 0.3s;
-        transition: background 0.3s color 0.2s, text-shadow 0.3s box-shadow 0.3s;
-    }
+button::after {
+	content: "";
+	display: block;
+	height: 0.15rem;
+	position: absolute;
+	bottom: 0.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	filter: blur(1px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
 }
