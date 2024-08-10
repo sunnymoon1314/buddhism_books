@@ -39,23 +39,25 @@ div.gallery img {
 .header img {
   /* 28.07.2024 Soon: Align the image left or right using inline HTML tag instead. */
   /* float: left; */
-  width: 110px;
-  height: 120px;
+  width: 180px;
+  height: 200px;
   background: #555;
   box-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
+  align-items: center;
 }
 
 .header h1 {
-  color: blue;
-  position: relative;
+  color: orangered;
   left: 10px;
   font-family: 'Arial'; /* LiSu */
   /* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
   STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei */
   /* font-weight: normal; KaiTi', '楷体_GB2312', 'SimSun'; */
   font-size: 48px;
-  font-weight: normal;
-  text-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
+  font-weight: bold;
+  text-shadow: 1px 4px 4px rgba(255, 104, 104, 0.9);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .header h2 {
@@ -87,16 +89,6 @@ h1, h2, h3, h4, h5 {
   font-weight: bolder;
 }
 */
-
-p.desc_en {
-  padding: 0 6px;
-  text-align: left;
-  font-family: 'Arial';
-  /* font-size: medium; */
-  font-size: 12px;
-  /* font-weight: bolder; */
-  text-shadow: 1px 2px 2px rgba(73, 104, 163, 0.6);
-}
 
 div.desc {
   padding: 0 6px;
@@ -479,15 +471,20 @@ img:hover {
 
 /* The navbar */
 .topnav {
+  width: 800px;
+  align-content: center;
   overflow: hidden;
   background-color: antiquewhite;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Navbar links */
 .topnav a {
   float: left;
-  color: black; /* antiquewhite */
+  color: yellow; /* antiquewhite */
   text-decoration: none;
+  text-shadow: 1px 4px 4px rgba(255,255,255, 0.6);
 }
 
 .topnav a:hover {
@@ -511,7 +508,7 @@ img:hover {
   animation: anime 16s linear infinite;
   */
 
-  width: 220px;
+  width: 200px;
   height: 60px;
   text-align: center;
   align-content: space-evenly;
@@ -522,18 +519,22 @@ img:hover {
 	border-radius: 16px; /* 50px */
 	line-height: 20px;
   font-family: 'Arial Narrow';
-	font-size: 20px;
-  font-weight: bold;
+	font-size: 24px;
+  font-weight: normal;
 
 	/* border: 1px solid #012880; */
-	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
-	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+  /* background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%); */
+	background-image: linear-gradient(-180deg, white 0%, antiquewhite 100%);
+  box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
 							0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
 							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
 							0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
   background: linear-gradient(-45deg, #FFA63D, #FF3D77, #3CF0C5, #338AFF);
   background-size: 600%;
+  /*
   animation: anime 16s linear infinite;
+  animation: neon 5s infinite;
+  */
 }
 
 /*
@@ -603,3 +604,189 @@ img:hover {
 /* https://codepen.io/juanbrujo/pen/DBKxxM */
 /* 🌺🙏🌺🙏	Praying Hands	Alt + 128591	1F64F */
 /* https://www.webnots.com/alt-code-shortcuts-for-hands-symbols/ */
+
+/*
+<button><span>佛教书籍系列 Buddhism eBook Series</span></button>
+<button><span>佛教法宝 Buddhism Treasure</span></button>
+*/
+
+button {
+  /*
+	cursor: pointer;
+	position: relative;
+	padding: 2.5rem 7.5rem;
+	border-radius: 3.75rem;
+	line-height: 2.5rem;
+	font-size: 2rem;
+	font-weight: 600;
+  */
+
+	cursor: pointer;
+	position: relative;
+	border-radius: 50px;
+	line-height: 50px;
+	font-size: 15px;
+	
+	border: 1px solid #012880;
+	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+							0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+}
+
+button span {
+	color: transparent;
+	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+button::before {
+	content: "";
+	display: block;
+	height: 0.15rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+button::after {
+	content: "";
+	display: block;
+	height: 0.15rem;
+	position: absolute;
+	bottom: 0.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	filter: blur(1px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+/*
+html,
+body {
+	height: 100%;
+	display: flex;
+	align-items: top;
+	justify-content: center;
+	background-color: navajowhite;
+}
+*/
+/* BEGIN TEXT ANIMATION.
+** These segment for animating a line of texts from left to right.
+    <div class="box">
+      <div class="inner">
+        <span>🙏南无阿弥陀佛🙏众生是未来佛🙏极乐世界是我家🙏</span>
+      </div>
+      <div class="inner">
+        <span>🙏南无阿弥陀佛🙏众生是未来佛🙏极乐世界是我家🙏</span>
+      </div>
+    </div>
+*/
+
+.box {
+	display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box .inner {
+	width: 8000px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 22px;
+	font-family: Arial;
+  font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+  text-shadow: 1px 4px 4px rgba(255, 104, 104, 0.9);
+}
+
+.box .inner:first-child {
+	background-color: antiquewhite;
+	color: red;
+	transform-origin: right;
+	transform: perspective(500px) rotateY(-0deg);
+}
+
+.box .inner:last-child {
+	background-color: antiquewhite;
+	color: red;
+	transform-origin: left;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 10s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+/* END TEXT ANIMATION */
+
+.marquee {
+  /*
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, .15);
+  background-color: #ffffff;
+  */
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  font-size: 42px;
+  color: red;
+  text-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
+  width: 150%;
+  /* Full width of its parent */
+  white-space: nowrap;
+}
+
+.marquee p {
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  /* text-align: center; */
+  /* Start off the right edge */
+  transform: translateX(100%);
+  /* Animate to the left */
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(100%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}

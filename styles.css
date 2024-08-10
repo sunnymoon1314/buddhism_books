@@ -1,4 +1,5 @@
 body {
+  /* Unicode Character “卍” (U+534D) */
   /* https://www.w3schools.com/cssref/css_colors.php */
   /* https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line */
   /* font-family: 'KaiTi', '楷体_GB2312', 'SimSun'; */
@@ -55,25 +56,30 @@ div.gallery img {
 .header img {
   /* 28.07.2024 Soon: Align the image left or right using inline HTML tag instead. */
   /* float: left; */
-  width: 110px;
-  height: 120px;
+  width: 180px;
+  height: 200px;
   background: #555;
   box-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
+  align-items: center;
 }
 
 .header h1 {
-  color: blue;
-  position: relative;
+  color: orangered;
   left: 10px;
   font-family: 'Arial'; /* LiSu */
   /* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
   STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei */
   /* font-weight: normal; KaiTi', '楷体_GB2312', 'SimSun'; */
   font-size: 48px;
-  font-weight: normal;
-  text-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
+  font-weight: bold;
+  text-shadow: 1px 4px 4px rgba(255, 104, 104, 0.9);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
+/*
+<h2>Buddhism eBook Series - Compiled By Upasaka Soon Guo-Sen</h2>
+*/
 .header h2 {
   color: orangered;
   position: relative;
@@ -93,17 +99,6 @@ h1, h2, h3, h4, h5 {
   font-weight: bolder;
 }
 */
-
-p.desc_en {
-  padding: 0 6px;
-  text-align: left;
-  font-family: 'Arial';
-  /* font-size: medium; */
-  font-size: 12px;
-  /* font-weight: bolder; */
-  text-shadow: 1px 2px 2px rgba(73, 104, 163, 0.6);
-
-}
 
 div.desc {
   padding: 0 6px;
@@ -473,20 +468,30 @@ img:hover {
 
 /* The navbar */
 .topnav {
+  width: 800px;
+  align-content: center;
   overflow: hidden;
   background-color: antiquewhite;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Navbar links */
 .topnav a {
   float: left;
-  color: black; /* antiquewhite */
+  color: yellow; /* antiquewhite */
   text-decoration: none;
+  text-shadow: 1px 4px 4px rgba(255,255,255, 0.6);
 }
 
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+}
+
+:root {
+  --shadow-color: #FF9E9E;
+  --shadow-color-light: antiquewhite;
 }
 
 .menu-button {
@@ -505,7 +510,7 @@ img:hover {
   animation: anime 16s linear infinite;
   */
 
-  width: 220px;
+  width: 200px;
   height: 60px;
   text-align: center;
   align-content: space-evenly;
@@ -516,18 +521,22 @@ img:hover {
 	border-radius: 16px; /* 50px */
 	line-height: 20px;
   font-family: 'Arial Narrow';
-	font-size: 20px;
-  font-weight: bold;
+	font-size: 24px;
+  font-weight: normal;
 
 	/* border: 1px solid #012880; */
-	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
-	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+  /* background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%); */
+	background-image: linear-gradient(-180deg, white 0%, antiquewhite 100%);
+  box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
 							0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
 							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
 							0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
   background: linear-gradient(-45deg, #FFA63D, #FF3D77, #3CF0C5, #338AFF);
   background-size: 600%;
+  /*
   animation: anime 16s linear infinite;
+  animation: neon 5s infinite;
+  */
 }
 
 /*
@@ -590,6 +599,24 @@ img:hover {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+    0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+  }
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
   }
 }
 
@@ -678,7 +705,9 @@ body {
 	justify-content: center;
 	background-color: navajowhite;
 }
-
+*/
+/* BEGIN TEXT ANIMATION.
+** These segment for animating a line of texts from left to right.
     <div class="box">
       <div class="inner">
         <span>🙏南无阿弥陀佛🙏众生是未来佛🙏极乐世界是我家🙏</span>
@@ -691,41 +720,43 @@ body {
 
 .box {
 	display: flex;
-  margin-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .box .inner {
-	width: 3000px;
+	width: 8000px;
 	height: 50px;
 	line-height: 50px;
-	font-size: 20px;
+	font-size: 22px;
 	font-family: Arial;
-	font-weight: bold;
+  font-weight: bold;
 	white-space: nowrap;
 	overflow: hidden;
+  text-shadow: 1px 4px 4px rgba(255, 104, 104, 0.9);
 }
 
 .box .inner:first-child {
 	background-color: antiquewhite;
 	color: red;
 	transform-origin: right;
-	transform: perspective(100px) rotateY(-0deg);
+	transform: perspective(500px) rotateY(-0deg);
 }
 
 .box .inner:last-child {
 	background-color: antiquewhite;
 	color: red;
 	transform-origin: left;
-	transform: perspective(100px) rotateY(0deg);
+	transform: perspective(500px) rotateY(0deg);
 }
 
 .box .inner span {
 	position: absolute;
-	animation: marquee 15s linear infinite;
+	animation: marquee 10s linear infinite;
 }
 
 .box .inner:first-child span {
-	animation-delay: 7.5s;
+	animation-delay: 5s;
 	left: -100%;
 }
 
@@ -737,4 +768,45 @@ body {
 	to {
 		left: -100%;
 	}
+}
+/* END TEXT ANIMATION */
+
+.marquee {
+  /*
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, .15);
+  background-color: #ffffff;
+  */
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  font-size: 42px;
+  color: red;
+  text-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
+  width: 150%;
+  /* Full width of its parent */
+  white-space: nowrap;
+}
+
+.marquee p {
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  /* text-align: center; */
+  /* Start off the right edge */
+  transform: translateX(100%);
+  /* Animate to the left */
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(100%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
 }
