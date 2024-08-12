@@ -11,6 +11,19 @@ body {
   align-items: center;
   justify-items: center;
   justify-content: center;
+
+  /* 11.08.2024 Soon: Added background image. */
+  background-image: url("images/thumbnail/background.jpg");
+
+  /* Full width and height */
+  width: 100%;
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   /*
   border-style: solid;
   border-width: 1px;
@@ -474,7 +487,9 @@ img:hover {
   width: 800px;
   align-content: center;
   overflow: hidden;
+  /* 11.08.2024 Soon: Removed background colour from the navigation toolbar.
   background-color: antiquewhite;
+  */
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -509,7 +524,7 @@ img:hover {
   */
 
   width: 200px;
-  height: 60px;
+  height: 70px;
   text-align: center;
   align-content: space-evenly;
   margin-left: 6px;
@@ -519,7 +534,7 @@ img:hover {
 	border-radius: 16px; /* 50px */
 	line-height: 20px;
   font-family: 'Arial Narrow';
-	font-size: 24px;
+	font-size: 20px;
   font-weight: normal;
 
 	/* border: 1px solid #012880; */
@@ -626,7 +641,7 @@ button {
 	border-radius: 50px;
 	line-height: 50px;
 	font-size: 15px;
-	
+
 	border: 1px solid #012880;
 	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
 	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
@@ -654,7 +669,7 @@ button::before {
 	width: calc(100% - 7.5rem);
 	background: #fff;
 	border-radius: 100%;
-	
+
 	opacity: 0.7;
 	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
 }
@@ -670,7 +685,7 @@ button::after {
 	width: calc(100% - 7.5rem);
 	background: #fff;
 	border-radius: 100%;
-	
+
 	filter: blur(1px);
 	opacity: 0.05;
 	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
@@ -750,6 +765,14 @@ body {
 	}
 }
 /* END TEXT ANIMATION */
+
+/*
+<div class="box">
+<div class="marquee">
+  <p>南无阿弥陀佛 众生是未来佛</p>
+</div>
+</div>
+*/
 
 .marquee {
   /*
