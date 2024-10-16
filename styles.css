@@ -72,7 +72,7 @@ div.gallery img {
 .header img {
   /* 28.07.2024 Soon: Align the image left or right using inline HTML tag instead. */
   /* float: left; */
-  width: 180px;
+  width: 150px;
   height: 200px;
   background: #555;
   box-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
