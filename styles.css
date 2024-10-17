@@ -8,7 +8,7 @@ body {
   /* background: hwb(52 58% 4%); */
   /* background: hsl(53, 78%, 48%); */
   /* background-image: url('https://source.unsplash.com/daily'); */
-  background: antiquewhite;
+  /* 17.10.2024 Soon: Commented background: antiquewhite; */
   align-items: center;
   justify-items: center;
   justify-content: center;
@@ -72,10 +72,10 @@ div.gallery img {
 .header img {
   /* 28.07.2024 Soon: Align the image left or right using inline HTML tag instead. */
   /* float: left; */
-  width: 150px;
-  height: 200px;
-  background: #555;
-  box-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6);
+  width: 160px;
+  height: 220px;
+  /* background: #555; */
+  /* box-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6); */
   align-items: center;
 }
 
