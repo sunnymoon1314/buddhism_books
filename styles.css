@@ -72,11 +72,12 @@ div.gallery img {
 .header img {
   /* 28.07.2024 Soon: Align the image left or right using inline HTML tag instead. */
   /* float: left; */
+  /* 03.12.2024 Soon: Do not hard-code the width, otherwise the alignment cannot be set properly.
   width: 160px;
+  */
   height: 220px;
   /* background: #555; */
   /* box-shadow: 1px 4px 4px rgba(73, 104, 163, 0.6); */
-  align-items: center;
 }
 
 .header h1 {
@@ -89,6 +90,8 @@ div.gallery img {
   font-size: 48px;
   font-weight: bold;
   text-shadow: 1px 4px 4px rgba(255, 104, 104, 0.9);
+  /* 03.12.2024 Soon: To align the texts, you must use the text-align property. */
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -168,6 +171,7 @@ div.desc_en {
     padding: 0 10px;
     margin: 10px 0;
     grid-template-areas:
+      "header" "topnav"
       "item item item item item"
       "item item item item item"
       "item item item item item"
@@ -321,6 +325,7 @@ div.desc_en {
     padding: 0 10px;
     margin: 10px 0;
     grid-template-areas:
+      "header" "topnav"
       "item item item"
       "item item item"
       "item item item"
@@ -401,6 +406,8 @@ div.desc_en {
     padding: 0 10px;
     margin: 10px 0;
     grid-template-areas:
+      "header"
+      "topnav"
       "item"
       "item"
       "item"
@@ -484,8 +491,11 @@ img:hover {
 
 /* The navbar */
 .topnav {
+  /* 03.12.2024 Soon: Do not hard-code the width, otherwise the navigatinal buttons cannot be
+  aligned centrally.
   width: 800px;
-  align-content: center;
+  */
+  align-items: center;
   overflow: hidden;
   /* 11.08.2024 Soon: Removed background colour from the navigation toolbar.
   background-color: antiquewhite;
