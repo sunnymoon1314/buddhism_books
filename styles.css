@@ -296,7 +296,8 @@ div.desc_en {
   .header h1 {
     left: 10px;
     font-family: 'Arial'; /* LiSu */
-    font-size: 32px;
+    /* 05.12.2024 Soon: Changed the header font size from 32px to 48px */
+    font-size: 48px;
   }
 
   .header h2 {
@@ -376,7 +377,8 @@ div.desc_en {
   .header h1 {
     left: 10px;
     font-family: 'Arial'; /* LiSu */
-    font-size: 32px;
+    /* 05.12.2024 Soon: Changed the header font size from 32px to 48px */
+    font-size: 48px;
   }
 
   .header h2 {
