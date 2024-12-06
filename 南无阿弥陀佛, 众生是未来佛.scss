@@ -43,15 +43,15 @@ body {
     STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei, Kaiti */
     font-family: Arial;
     width: max-content;
-    // color: hsl(var(--hue), 75%, 75%);
-    color: red;
+    color: hsl(var(--hue), 90%, 45%);
+    // color: red;
   }
   
   
   @for $i from 0 to 25 {
     .panel:nth-child(#{$i + 1}) {
       --left: #{$width * $i * -1};
-      // --hue: #{360 / 25 * $i};
+      --hue: #{360 / 25 * $i};
       --angle: #{360deg / 25 * $i};
     }
   }

@@ -537,7 +537,8 @@ img:hover {
   animation: anime 16s linear infinite;
   */
 
-  width: 180px;
+  /* 06.12.2024 Soon: Widened the width of the buttons from 180px to 200px. */
+  width: 200px;
   height: 70px;
   text-align: center;
   align-content: space-evenly;
@@ -550,7 +551,8 @@ img:hover {
 	line-height: 20px;
   font-family: 'Arial Narrow';
 	font-size: 20px;
-  font-weight: normal;
+  /* 06.12.2024 Soon: Changed the weight from normal to bolder. */
+  font-weight: bold;
 
 	/* border: 1px solid #012880; */
   /* background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%); */
