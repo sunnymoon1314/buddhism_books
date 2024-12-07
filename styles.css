@@ -521,6 +521,16 @@ img:hover {
   --shadow-color-light: antiquewhite;
 }
 
+.button-image-1 {
+  /* 07.12.2024 Soon: Added new background provided by Linde. */
+  background-image: url("images/thumbnail/(1) 法宝系列.jpg");
+}
+
+.button-image-2 {
+  /* 07.12.2024 Soon: Added new background provided by Linde. */
+  background-image: url("images/thumbnail/(2) 名言系列.jpg");
+}
+
 .menu-button {
   /*
   align-content: float;
@@ -556,17 +566,33 @@ img:hover {
 
 	/* border: 1px solid #012880; */
   /* background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%); */
-	background-image: linear-gradient(-180deg, white 0%, antiquewhite 100%);
+	/* 07.12.2024 Soon: Commented the blue background.
+  background-image: linear-gradient(-180deg, white 0%, antiquewhite 100%);
   box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
 							0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
 							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
 							0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
   background: linear-gradient(-45deg, #FFA63D, #FF3D77, #3CF0C5, #338AFF);
   background-size: 600%;
+  */
+  background-size: 100% 100%;
   /*
   animation: anime 16s linear infinite;
   animation: neon 5s infinite;
   */
+}
+
+.menu-button:hover {
+  /*
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+  */
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  transform: scale(1.05, 1.05);
+  transition: .3s ease-in-out;
 }
 
 /*

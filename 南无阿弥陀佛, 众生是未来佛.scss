@@ -44,14 +44,88 @@ body {
     font-family: Arial;
     width: max-content;
     color: hsl(var(--hue), 90%, 45%);
-    // color: red;
   }
   
+  .panel:nth-child(1) {
+    color: red;
+  }
+  .panel:nth-child(2) {
+    color: red;
+  }
+  .panel:nth-child(3) {
+    color: red;
+  }
+  .panel:nth-child(4) {
+    color: red;
+  }
+  .panel:nth-child(5) {
+    color: red;
+  }
+  .panel:nth-child(6) {
+    color: red;
+  }
+  .panel:nth-child(7) {
+    color: red;
+  }
+  .panel:nth-child(8) {
+    color: red;
+  }
+  .panel:nth-child(9) {
+    color: red;
+  }
+  .panel:nth-child(10) {
+    color: red;
+  }
+  .panel:nth-child(11) {
+    color: red;
+  }
+  .panel:nth-child(12) {
+    color: red;
+  }
+  .panel:nth-child(13) {
+    color: blue;
+  }
+  .panel:nth-child(14) {
+    color: blue;
+  }
+  .panel:nth-child(15) {
+    color: blue;
+  }
+  .panel:nth-child(16) {
+    color: blue;
+  }
+  .panel:nth-child(17) {
+    color: blue;
+  }
+  .panel:nth-child(18) {
+    color: blue;
+  }
+  .panel:nth-child(19) {
+    color: blue;
+  }
+  .panel:nth-child(20) {
+    color: blue;
+  }
+  .panel:nth-child(21) {
+    color: blue;
+  }
+  .panel:nth-child(22) {
+    color: blue;
+  }
+  .panel:nth-child(23) {
+    color: blue;
+  }
+  .panel:nth-child(24) {
+    color: blue;
+  }
+  .panel:nth-child(25) {
+    color: blue;
+  }
   
   @for $i from 0 to 25 {
     .panel:nth-child(#{$i + 1}) {
       --left: #{$width * $i * -1};
-      --hue: #{360 / 25 * $i};
+      // --hue: #{360 / 25 * $i};
       --angle: #{360deg / 25 * $i};
     }
   }
