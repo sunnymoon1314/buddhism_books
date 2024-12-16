@@ -37,96 +37,141 @@ body {
   .panel::before {
     position: absolute;
     left: var(--left);
-    content: "南无阿弥陀佛, 众生是未来佛.";
-    font-size: 96px;
+    content: "南无阿弥陀佛🙏众生是未来佛🙏";
+    font-size: 95px;
     /* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
     STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei, Kaiti */
     font-family: Arial;
+    font-weight: bold;
     width: max-content;
     color: hsl(var(--hue), 90%, 45%);
   }
   
+  $color1: red; // orangered
+  $text-shadow1: 1px 4px 4px rgba(255, 104, 104, 0.9);
+  $text-shadow1: "";
+  $color2: blue; // orangered
+  $text-shadow2: 1px 4px 4px rgba(104, 104, 255, 0.9);
+  $text-shadow2: "";
+
   .panel:nth-child(1) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(2) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(3) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(4) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(5) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(6) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(7) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(8) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(9) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(10) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(11) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(12) {
-    color: red;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(13) {
-    color: blue;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(14) {
-    color: blue;
+    color: $color1;
+    text-shadow: $text-shadow1;
   }
   .panel:nth-child(15) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
   .panel:nth-child(16) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
   .panel:nth-child(17) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
   .panel:nth-child(18) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
   .panel:nth-child(19) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
   .panel:nth-child(20) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
   .panel:nth-child(21) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
   .panel:nth-child(22) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
   .panel:nth-child(23) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
   .panel:nth-child(24) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
   .panel:nth-child(25) {
-    color: blue;
+    color: $color2;
+    text-shadow: $text-shadow2;
   }
-  
-  @for $i from 0 to 25 {
+  .panel:nth-child(26) {
+    color: $color2;
+    text-shadow: $text-shadow2;
+  }
+  .panel:nth-child(27) {
+    color: $color2;
+    text-shadow: $text-shadow2;
+  }
+  .panel:nth-child(28) {
+    color: $color2;
+    text-shadow: $text-shadow2;
+  }
+
+  @for $i from 0 to 28 {
     .panel:nth-child(#{$i + 1}) {
       --left: #{$width * $i * -1};
       // --hue: #{360 / 25 * $i};
-      --angle: #{360deg / 25 * $i};
+      --angle: #{360deg / 28 * $i};
     }
   }
   

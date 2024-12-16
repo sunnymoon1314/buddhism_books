@@ -36,11 +36,12 @@ body {
 .panel::before {
   position: absolute;
   left: var(--left);
-  content: "南无阿弥陀佛, 众生是未来佛.";
-  font-size: 96px;
+  content: "南无阿弥陀佛🙏众生是未来佛🙏";
+  font-size: 95px;
   /* LiSu-GOOD, STCaiyun, STFangsong, STKaiti-GOOD, STHupo-BUBBLE LIKE,
   STXingkai-XING SHU, STLiti-A BIT FLAT, STXinwei, Kaiti */
   font-family: Arial;
+  font-weight: bold;
   width: -moz-max-content;
   width: max-content;
   color: hsl(var(--hue), 90%, 45%);
@@ -48,102 +49,142 @@ body {
 
 .panel:nth-child(1) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(2) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(3) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(4) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(5) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(6) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(7) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(8) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(9) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(10) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(11) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(12) {
   color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(13) {
-  color: blue;
+  color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(14) {
-  color: blue;
+  color: red;
+  text-shadow: "";
 }
 
 .panel:nth-child(15) {
   color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(16) {
   color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(17) {
   color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(18) {
   color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(19) {
   color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(20) {
   color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(21) {
   color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(22) {
   color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(23) {
   color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(24) {
   color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(25) {
   color: blue;
+  text-shadow: "";
+}
+
+.panel:nth-child(26) {
+  color: blue;
+  text-shadow: "";
+}
+
+.panel:nth-child(27) {
+  color: blue;
+  text-shadow: "";
+}
+
+.panel:nth-child(28) {
+  color: blue;
+  text-shadow: "";
 }
 
 .panel:nth-child(1) {
@@ -153,122 +194,137 @@ body {
 
 .panel:nth-child(2) {
   --left: -50px;
-  --angle: 14.4deg;
+  --angle: 12.8571428571deg;
 }
 
 .panel:nth-child(3) {
   --left: -100px;
-  --angle: 28.8deg;
+  --angle: 25.7142857143deg;
 }
 
 .panel:nth-child(4) {
   --left: -150px;
-  --angle: 43.2deg;
+  --angle: 38.5714285714deg;
 }
 
 .panel:nth-child(5) {
   --left: -200px;
-  --angle: 57.6deg;
+  --angle: 51.4285714286deg;
 }
 
 .panel:nth-child(6) {
   --left: -250px;
-  --angle: 72deg;
+  --angle: 64.2857142857deg;
 }
 
 .panel:nth-child(7) {
   --left: -300px;
-  --angle: 86.4deg;
+  --angle: 77.1428571429deg;
 }
 
 .panel:nth-child(8) {
   --left: -350px;
-  --angle: 100.8deg;
+  --angle: 90deg;
 }
 
 .panel:nth-child(9) {
   --left: -400px;
-  --angle: 115.2deg;
+  --angle: 102.8571428571deg;
 }
 
 .panel:nth-child(10) {
   --left: -450px;
-  --angle: 129.6deg;
+  --angle: 115.7142857143deg;
 }
 
 .panel:nth-child(11) {
   --left: -500px;
-  --angle: 144deg;
+  --angle: 128.5714285714deg;
 }
 
 .panel:nth-child(12) {
   --left: -550px;
-  --angle: 158.4deg;
+  --angle: 141.4285714286deg;
 }
 
 .panel:nth-child(13) {
   --left: -600px;
-  --angle: 172.8deg;
+  --angle: 154.2857142857deg;
 }
 
 .panel:nth-child(14) {
   --left: -650px;
-  --angle: 187.2deg;
+  --angle: 167.1428571429deg;
 }
 
 .panel:nth-child(15) {
   --left: -700px;
-  --angle: 201.6deg;
+  --angle: 180deg;
 }
 
 .panel:nth-child(16) {
   --left: -750px;
-  --angle: 216deg;
+  --angle: 192.8571428571deg;
 }
 
 .panel:nth-child(17) {
   --left: -800px;
-  --angle: 230.4deg;
+  --angle: 205.7142857143deg;
 }
 
 .panel:nth-child(18) {
   --left: -850px;
-  --angle: 244.8deg;
+  --angle: 218.5714285714deg;
 }
 
 .panel:nth-child(19) {
   --left: -900px;
-  --angle: 259.2deg;
+  --angle: 231.4285714286deg;
 }
 
 .panel:nth-child(20) {
   --left: -950px;
-  --angle: 273.6deg;
+  --angle: 244.2857142857deg;
 }
 
 .panel:nth-child(21) {
   --left: -1000px;
-  --angle: 288deg;
+  --angle: 257.1428571429deg;
 }
 
 .panel:nth-child(22) {
   --left: -1050px;
-  --angle: 302.4deg;
+  --angle: 270deg;
 }
 
 .panel:nth-child(23) {
   --left: -1100px;
-  --angle: 316.8deg;
+  --angle: 282.8571428571deg;
 }
 
 .panel:nth-child(24) {
   --left: -1150px;
-  --angle: 331.2deg;
+  --angle: 295.7142857143deg;
 }
 
 .panel:nth-child(25) {
   --left: -1200px;
-  --angle: 345.6deg;
+  --angle: 308.5714285714deg;
+}
+
+.panel:nth-child(26) {
+  --left: -1250px;
+  --angle: 321.4285714286deg;
+}
+
+.panel:nth-child(27) {
+  --left: -1300px;
+  --angle: 334.2857142857deg;
+}
+
+.panel:nth-child(28) {
+  --left: -1350px;
+  --angle: 347.1428571429deg;
 }
 
 .screen {
