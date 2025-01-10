@@ -523,12 +523,16 @@ img:hover {
 
 .button-image-1 {
   /* 07.12.2024 Soon: Added new background provided by Linde. */
-  background-image: url("images/thumbnail/(1) 法宝系列.jpg");
+  /* background-image: url("images/thumbnail/(1) 法宝系列.jpg"); */
+  /* 09.01.2025 Soon: Added new background provided by Linde. */
+  background-image: url("images/thumbnail/法宝系列 updated 10 Jan 25.jpg");
 }
 
 .button-image-2 {
   /* 07.12.2024 Soon: Added new background provided by Linde. */
-  background-image: url("images/thumbnail/(2) 名言系列.jpg");
+  /* background-image: url("images/thumbnail/(2) 名言系列.jpg"); */
+  /* 09.01.2025 Soon: Added new background provided by Linde. */
+  background-image: url("images/thumbnail/名言系列 updated 10 Jan 25.jpg");
 }
 
 .menu-button {
