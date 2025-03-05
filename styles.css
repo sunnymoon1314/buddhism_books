@@ -552,13 +552,17 @@ img:hover {
   */
 
   /* 06.12.2024 Soon: Widened the width of the buttons from 180px to 200px. */
-  width: 200px;
-  height: 70px;
+  /* 05.02.2025 Soon: Increased the height of the buttons from 70px to 100px. */
+  /* 05.02.2025 Soon: Widened the width of the buttons from 200px to 220px. */
+  width: 220px;
+  height: 100px;
   text-align: center;
-  align-content: space-evenly;
+  align-content: center;
+  /* 04.03.2025 Soon: Commented out the left and right margin.
   margin-left: 30px;
   margin-right: 30px;
-
+  */
+  
 	cursor: pointer;
 	position: relative;
 	border-radius: 16px; /* 50px */
