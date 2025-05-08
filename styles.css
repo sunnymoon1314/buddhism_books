@@ -535,6 +535,11 @@ img:hover {
   background-image: url("images/thumbnail/名言系列 updated 10 Jan 25.jpg");
 }
 
+.button-image-3 {
+  /* 26.04.2025 Soon: Added new button 3 provided by Linde. */
+  background-image: url("images/thumbnail/挂画结缘 updated 26 Apr 2025.jpg");
+}
+
 .menu-button {
   /*
   align-content: float;
